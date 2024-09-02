@@ -12,9 +12,15 @@
   justify-content: center;
 }
 .sidebar{
-  width: 7%;
+  width: 5%;
   height: 100%;
   background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 .rightside{
   width: 93%;
@@ -22,13 +28,14 @@
   background-color: grey;
 }
 .header{
-  height: 7%;
+  height: 70px;
   width: 100%;
-  background-color: white;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
+  padding: 2px 2px 2px 2px;
 }
 .youtube{
   height: 100%;
@@ -47,8 +54,33 @@
   align-items: center;
   justify-content: center;
 }
+.searchBar{
+  border: 1px solid #000000;
+  border-radius: 20px;
+  height: 40px;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+}
 .icon{
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  justify-content: center;
+}
+.videoGrid{
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+}
+.thumbnail{
+  border:none;
+  border-radius: 20px;
 }
