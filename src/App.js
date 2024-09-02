@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { CiHome } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
+
+function Icon(props){
+  return(
+    <div className='icon'>
+      <div>{props.icon}</div>
+      <div>{props.label}</div>
+    </div>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="sidebar">
+        <Icon icon={<CiHome size={40}/>} label={'Home'}/>
+      </div>
+      <div className="rightside">
+        <div className='header'>
+          <div className='youtube'><CiYoutube size={60}/><h1>YOUTUBE</h1></div>
+          <div className='search'><input placeholder='search' /></div>
+        </div>
+      </div>
     </div>
   );
 }
